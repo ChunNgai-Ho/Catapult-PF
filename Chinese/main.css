@@ -1,0 +1,627 @@
+body {
+    background-image: url(https://images.unsplash.com/photo-1533029030467-904d7bbd602b?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE0fHx8ZW58MHx8fHx8);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% auto;
+    background-position: center;
+    color: white;
+    font-family: 'Georgia', serif;
+    margin: 0;
+    padding: 0;
+}
+
+.homepage {
+  color: white;
+  text-decoration: none;
+}
+
+.homepage:hover {
+  color: grey;
+}
+
+.space-hello {   /* space out from the top*/
+  margin-top: 150px;
+}
+
+h1 {
+    font-family:'Georgia', serif;
+    text-align: center;
+    font-size: 100px;
+    /* text-shadow: horizontal vertical color;  */
+    text-shadow: 10px 10px black;
+}
+
+
+
+
+/* top bar */
+.top-bar {
+    background-color:rgb(0, 0, 0);
+    padding: 3px 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    }
+
+.top-bar .name {
+    font-size: 30px;
+    font-family: 'Georgia', serif;
+    padding: 20px;
+}
+
+.top-bar .nav{
+  display: flex;
+  align-items: center;
+  padding-right: 20px;
+}
+
+.top-bar .nav a {
+  color: white;
+  font-size: 15px;
+  transition: color 0.3s ease;
+  padding:10px;
+  align-content: center;
+  text-decoration: none;
+}
+
+.top-bar .nav a:hover {
+    color: white;
+}
+
+.top-button{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width:100px;
+  height:30px;
+  background-color: grey;       
+  border: 2px solid white;
+  border-radius: 8px;
+  margin-left:  20px;
+}
+
+.top-button:hover {
+  background-color: rgb(63, 63, 63);
+}
+/* End of top top bar */
+
+.space-aboutme{   /* space out from hello */
+  margin-top: 390px;
+}
+
+/* Create two part for the img and the intro text */
+
+
+.intro {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 40px;
+  margin: 30px 25px; /* shift the whole thing slightly from the sides */
+  flex-wrap: wrap;
+}
+
+
+/* picture of me */
+.photo-frame{
+  width: 500px;
+  height: 380px;
+  border: 7px solid grey;
+  border-radius: 100px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgb(82, 82, 82);
+  margin-left: 25px;
+}
+
+.photo-frame img{
+width:100%;
+height:100%;
+}
+
+
+/* aboutme text box */
+.aboutme-box{
+  background-color:rgba(255, 255, 255, 0.85);
+  color:black;
+  font-size: 20px;
+  width: 35%;
+  height: auto;
+  margin: 50px auto;
+  border: 1px solid black;
+  border-radius: 30px;
+  padding: 0px 10px 10px 10px;
+  word-wrap: break-word;
+  text-align: center ;
+  font-family: 'Times New Roman', Times, serif;
+  margin-bottom: 10px;
+}
+
+  /* About me box 2 */
+
+h2{      /*Hobbies and Future major plan title  */
+  font-family:'Times New Roman', Times, serif;
+  text-align: center;
+  font-size: 20px;
+  color: rgb(0, 0, 0);
+}
+
+.aboutme-box2 {
+  color: black;
+  display: flex;
+
+  margin-top: 50px;
+  color: rgb(0, 0, 0);
+}
+
+.text-background {
+  background-color: rgba(165, 165, 165, 0.726);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+
+  /* hobbie text box */
+.hobbie-box {
+  background-image: url(https://img.freepik.com/premium-vector/basketball-cartoon-pattern-background-design_24529-2156.jpg);
+  font-size: 20px;
+  width: 40%;
+  height: 200px;
+  margin: auto;
+  border: 2px solid black;
+  border-radius: 30px;
+  word-wrap: break-word;
+  text-align: center;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+  /* future career box */
+.futureplan-box {
+  background-image: url(https://www.teachhub.com/wp-content/uploads/2020/05/Top-12-Pioneers-in-Education-scaled.jpg);
+  font-size: 20px;
+  width: 40%;
+  height: 200px;
+  margin: auto;
+  border: 2px solid black;
+  border-radius: 30px;
+  word-wrap: break-word;
+  text-align: center;
+  font-family: 'Times New Roman', Times, serif;
+  background-size: cover;
+  background-position: center;
+}
+
+
+
+/* Moving Box */
+
+.space-interests {   /* space out from about me*/
+  margin-top: 150px;
+}
+
+.slider-wrapper {
+  overflow: hidden;
+  width: 100%;
+  margin: 60px auto;
+  position: relative;
+}
+
+.slider-track {
+  display: flex;
+  gap: 40px;
+  width:200%;
+  will-change:transform; 
+  animation: scroll-left 10s linear infinite;
+}
+
+.slider-wrapper:hover .slider-track {
+  animation-play-state: paused;
+ 
+}
+.info-box {
+  background-color:   rgba(190, 98, 216, 0.87);
+  color:black;
+  border-radius: 10px;
+  padding: 16px;
+  width: 300px;
+  height: 180px; 
+  min-height: 180px;
+  overflow: hidden; /*prvent text overflow*/
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 50px;
+  transition: all 0.5s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  text-align: center;
+}
+
+.info-box .details {
+  margin-top: 10px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  font-size: 20px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  text-align: justify;
+}
+
+.info-box:hover {
+  width: 350px;
+  background-color: rgb(167, 83, 190);
+  font-size: 30px;
+  height: 300px;
+}
+
+.info-box:hover .details {
+  opacity: 1;
+}
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%); 
+  }
+}
+  /* Moving box inside */
+.brief {
+  font-size: 35px;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+。details{
+  font-size: 40px;
+}
+.interest-button {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  margin-top: 12px;
+  background-color:rgba(106, 52, 121, 0.85);
+  width: fit-content;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  text-decoration-style: none;
+
+}
+
+.info-box:hover .interest-button {
+  opacity: 1;
+}
+
+.project-button {
+  display: inline-block;
+  background-color: transparent; 
+  color: black;                
+  padding: 6px 14px;
+  border: 1px solid white;
+  border-radius: 6px;
+  font-size: 20px;
+  transition: all 0.3s ease;
+  width: fit-content;
+}
+
+.project-button:hover {
+  background-color: rgba(62, 30, 70, 0.85);
+  color:white; 
+}
+
+.details, .interest-button{
+  display: none;
+}
+
+.info-box:hover .details,
+.info-box:hover .interest-button {
+  display: block;
+  opacity: 1;
+}
+
+
+
+
+/* My Skills */
+.space-skills {   /* space out from the interest box*/
+  margin-top: 150px;
+}
+
+.skills-section{
+  background-color: rgba(148, 148, 148, 0.527); 
+  padding: 20px 10px;
+}
+
+h3 {
+  font-family: 'Georgia', serif;
+  text-align: center;
+  font-size: 50px;
+  margin-bottom: 30px;
+}
+
+  /* Line up the logos */
+
+.logos {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap; /* keeps it responsive */
+}
+  /* Logos box */
+.logo-box {
+  width: 200px;
+  height: 160px;
+  background-color: rgb(247, 182, 122);
+  border-radius: 20px;
+  text-align: center;
+  padding: 10px;
+  transition: transform 0.2s;
+}
+
+.logo-box:hover {
+  transform: scale(1.05);
+}
+
+.logo-box img {
+  width: 100%;
+  height: 150px;
+  object-fit: contain; /*make them fits the box*/
+  margin-bottom: 10px;
+}
+
+
+
+/* low bar */
+.space-lowbar {   /* space out from the interest box*/
+  margin-top: 150px;
+}
+
+.footer-bar {
+  background-color: black;
+  text-align:center;
+  padding: 20px;
+  font-family: 'Georgia', serif;
+}
+
+.footer-links{
+  display:flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+.footer-text {
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  transition: color 0.3s;
+  text-decoration: none;
+}
+
+.footer-text:hover {
+  color: grey;
+}
+
+html{   /*make it scroll up instead of jumping to the top*/
+  scroll-behavior: smooth;
+}
+
+
+
+
+/* change background */
+
+#change-background-btn {
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+  padding: 10px 15px;
+  border: 2px solid black;
+  border-radius: 10px;
+  background: #303cad;
+  color: white;
+  font-size: 16px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  transition: background 0.2s;
+}
+
+#change-background-btn:hover {
+  background: #1a2161;
+}
+
+
+/* Contact me */
+
+.contactme-group {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin: 80px auto;
+  padding: 20px 40px;
+  gap: 60px;
+  flex-wrap: wrap;
+}
+
+  /* Contact icons on the left */
+.contact-icons {
+  display: grid;
+  grid-template-columns: 1fr 1fr;     /* 2 icon each line */
+  gap: 30px;
+  flex: 1;
+  justify-content: center;
+  margin-top: 150px; 
+}
+
+.contact-icons a {
+  background-color: rgba(255, 255, 255, 0.6); 
+  border-radius: 50%;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease;
+}
+
+.contact-icons img {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+}
+
+.contact-icons a:hover {
+  transform: scale(1.1);
+}
+
+  /* Google Form box on the right */
+
+.contact-form-box iframe {
+  max-width: 100%;
+  border-radius: 15px;
+  border: none;
+}
+
+
+
+/*Project page*/
+.C-projects {
+  margin-top: 90px;
+  display: flex;
+  justify-content: center;
+}
+
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: center;
+  width: 100%;
+}
+
+.project-button {
+  width: 300px;
+  background-color: rgb(255, 152, 152);
+  border-radius: 10px;
+  text-decoration: none;
+  color: black;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  transition: transform 0.2s ease;
+}
+
+.project-button:hover {
+  transform: scale(1.03);
+  background-color: rgb(250, 102, 102);
+  color: black;
+}
+
+.project-button img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.button-text {
+  font-size: 15px;
+  margin-top: -10px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+h4{
+  font-size: 20px;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: bold;
+}
+
+
+
+
+/* My art projects */
+.space-projects{ 
+  margin-top: 160px;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  margin: 40px;
+}
+
+  /* Arts */
+.arts-1 img {
+  width: 500px;
+  height: auto;
+  border: solid 10px #c2a15c ;
+  border-radius: 12px;
+  box-shadow:  10px 12px rgba(0, 0, 0, 0.3);
+}
+
+.arts-2 img {
+  width: 400px;
+  height: auto;
+  border: solid 10px #c2a15c ;
+  border-radius: 12px;
+  box-shadow:  10px 12px rgba(0, 0, 0, 0.3);
+}
+.arts-3 img {
+  width: 500px;
+  height: auto;
+  border: solid 10px #c2a15c ;
+  border-radius: 12px;
+  box-shadow:  10px 12px rgba(0, 0, 0, 0.3);
+}
+.arts-4 img {
+  width: 400px;
+  height: auto;
+  border: solid 10px #c2a15c ;
+  border-radius: 12px;
+  box-shadow:  10px 12px rgba(0, 0, 0, 0.3);
+}
+
+  /* Arts description */
+.text {
+  font-size:20px;
+  background-color: rgba(0, 0, 0, 0.884);
+  padding: 10px;
+  border-radius: 12px;
+  max-width: 300px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  box-shadow:  10px 12px rgba(0, 0, 0, 0.3);
+}
+
+
+/* My Resume */
+
+.resume {
+  text-align: center;
+  margin-top: 10px;
+  padding: 20px;
+  font-family: 'Georgia', serif;
+}
+
+.resume-size {
+  width: 80%;
+  height: 600px;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+/* Workcited */
+
+.workcited {
+  background-color: rgba(0, 0, 0, 0.801);
+  color: white;
+  padding: 20px;
+  margin: 40px auto;
+  width: 80%;
+  border-radius: 10px;
+  font-family: Georgia, serif;
+  font-size: 16px;
+  line-height: 1.6;
+}
